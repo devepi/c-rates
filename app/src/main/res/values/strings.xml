@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">c:rates</string>
+    <string name="countryFlag">Country Flag</string>
+    <string name="emoji">\uD83D\uDE10</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/defaultRowBackground">
+
+    <androidx.emoji.widget.EmojiTextView
+        android:id="@+id/currencyFlag"
+        android:layout_width="@dimen/currencyFlagSize"
+        android:layout_height="@dimen/currencyFlagSize"
+        android:layout_margin="@dimen/currencyFlagMargin"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/primaryTextColor"
+        android:contentDescription="@string/countryFlag"
+        tools:text="@string/emoji"
+        />
+
+    <TextView
+        android:id="@+id/currencyDescription"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center_vertical|start"
+        android:textSize="16sp"
+        tools:text="USD\nEuro"
+        />
+
+    <EditText
+        android:id="@+id/currencyRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/currencyFlagMargin"
+        android:gravity="center_vertical|end"
+        android:textSize="20sp"
+        android:textColor="@color/primaryTextColor"
+        tools:text="1183.06"
+        android:inputType="numberDecimal"
+        />
+
+</LinearLayout>
