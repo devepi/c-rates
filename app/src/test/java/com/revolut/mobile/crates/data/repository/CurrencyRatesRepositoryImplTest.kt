@@ -2,18 +2,14 @@ package com.revolut.mobile.crates.data.repository
 
 import com.github.kittinunf.fuel.core.Client
 import com.github.kittinunf.fuel.core.FuelManager
-import com.github.kittinunf.fuel.core.interceptors.LogRequestInterceptor
-import com.github.kittinunf.fuel.core.interceptors.LogResponseInterceptor
 import com.revolut.mobile.crates.data.file.FileManager
-import com.revolut.mobile.crates.data.file.FileManagerImpl
 import com.revolut.mobile.crates.model.Currency
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
-import org.junit.Test
-
 import org.junit.Assert.*
 import org.junit.Before
+import org.junit.Test
 
 class CurrencyRatesRepositoryImplTest {
 

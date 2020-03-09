@@ -1,15 +1,12 @@
 package com.revolut.mobile.crates.data.repository
 
 import com.github.kittinunf.fuel.core.FuelManager
-import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.result.Result
 import com.revolut.mobile.crates.data.file.FileManager
-import com.revolut.mobile.crates.data.json.JsonMapper
 import com.revolut.mobile.crates.data.json.currencies
 import com.revolut.mobile.crates.data.json.json
 import com.revolut.mobile.crates.data.json.rates
 import com.revolut.mobile.crates.model.Currency
-import org.json.JSONObject
 
 class CurrencyRatesRepositoryImpl(
     private val fileManager: FileManager,
